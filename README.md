@@ -37,7 +37,7 @@ IPTracer is a GUI-based bulk IP info extraction tool that fetches detailed infor
 
 1. Run the application:
     ```sh
-    python main.py
+    python IPTracer.py
     ```
 
 2. Follow the GUI prompts:
