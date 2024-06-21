@@ -15,10 +15,8 @@ import sys
 
 
 if hasattr(sys, '_MEIPASS'):
-    # If the script is run from a bundled executable, _MEIPASS will be set
     base_path = sys._MEIPASS
 else:
-    # If the script is run normally, use the directory of the script
     base_path = os.path.abspath(".")
 
 
@@ -119,7 +117,7 @@ def create_gui():
     img2 = ImageTk.PhotoImage(img1)
 
     lbl1 = Label(root,image=img2)
-    lbl1.image = img2  # Keep a reference to avoid garbage collection
+    lbl1.image = img2 
     lbl1.place(x=195, y=5)
     
     label1 = tk.Label(root, text="IP TRACER", font=("Arial Bold", 24))
